@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4 {
+    // background-color: red;
+    margin-top: 5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    @include m.tablet_768 {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+    @include m.desktop_1020 {
+        margin-top: 4rem;
+    }
+}

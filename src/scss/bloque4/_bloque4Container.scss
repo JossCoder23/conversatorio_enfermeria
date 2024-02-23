@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4__container {
+    // background-color: purple;
+    // width: 80%;
+    width: 26rem;
+    height: 7rem;
+    @include m.tablet_820 {
+        width: 35rem;
+        height: 10rem;
+    }
+    @include m.desktop_1920 {
+        width: 42rem;
+        height: 13rem;
+    }
+}

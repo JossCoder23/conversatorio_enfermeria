@@ -1,0 +1,94 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1__bottom  {
+    display: grid;
+    justify-items: center;
+    height: auto;
+    font-family: v.$druk_wide;
+    width: 100%;
+    margin-top: 2rem;
+    h3 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: white;
+        text-align: center;
+        line-height: 1.3;
+        @include m.tablet_768 {
+            font-size: 2rem;
+        }
+        @include m.tablet_820 {
+            font-size: 2.5rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 2.8rem;
+        }
+        span {
+            color: v.$sexto;
+        }
+    }
+}
+
+.sub {
+    top: .5rem;
+    position: relative;
+    width: 85%;
+    height: .25rem;
+    background-color: white;
+    @include m.phone_360 {
+        // top: 1rem;
+        width: 80%;
+    }
+    // @include m.phone_375 {
+    //     width: 65%;
+    // }
+    // @include m.phone_390 {
+    //     // top: -0.5rem;
+    //     width: 62%;
+    // }
+    @include m.phone_414 {
+        width: 75%;
+    }
+    // @include m.phone_428 {
+    //     width: 55%;
+    // }
+    // @include m.phone_480 {
+    //     width: 52%;
+    // }
+    // @include m.tablet_768 {
+    //     // top: -0.8rem;
+    //     width: 35%;
+    // }
+    @include m.tablet_820 {
+        width: 58%;
+    }
+    // @include m.desktop_1020 {
+    //     width: 40%;
+    // }
+    // @include m.desktop_1280 {
+    //     width: 35%;
+    // }
+    @include m.desktop_1080 {
+        width: 75%;
+    }
+    @include m.desktop_1280 {
+        width: 65%;
+    }
+    @include m.desktop_1520 {
+        width: 52%;    
+    }
+    @include m.desktop_1920 {
+        width: 55%;
+    }
+    @include m.desktop_2240 {
+        width: 43%;
+    }
+    // @include m.desktop_1920 {
+    //     // top: -1.8rem;
+    //     height: .7rem;
+    //     width: 33%;
+    // }
+    // @include m.desktop_2560 {
+    //     width: 23%;
+    // }
+}

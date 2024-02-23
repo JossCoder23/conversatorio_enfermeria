@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1__top {
+    display: flex;
+    justify-items: center;
+    height: auto;
+    font-family:  v.$morganite;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    @include m.desktop_1020 {
+        justify-content: flex-start;
+        padding-left: 13rem;
+    }
+    @include m.desktop_1280 {
+        padding-left: 14rem;
+    }
+    @include m.desktop_1360 {
+        padding-left: 15rem;
+    }
+    @include m.desktop_1440 {
+        padding-left: 16rem;
+    }
+    @include m.desktop_1520 {
+        padding-left: 17rem;
+    }
+    @include m.desktop_1620 {
+        padding-left: 18rem;
+    }
+    @include m.desktop_1720 {
+        padding-left: 19rem;
+    }
+    @include m.desktop_1920 {
+        padding-left: 18rem;
+    }
+    h3 {
+        color: white;
+        margin: 0;
+        font-size: 11.2rem;
+        @include m.tablet_768 {
+            font-size: 16rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 13rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 17rem;
+        }
+    }
+}

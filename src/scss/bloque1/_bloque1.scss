@@ -1,0 +1,116 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.logo_top {
+    // margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 3;
+    // background-color: red;
+    line-height: .9;
+    // margin-top: 2.5rem;
+    overflow: hidden;
+    @include m.phone_375 {
+        // margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    @include m.phone_390 {
+        // margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    @include m.desktop_1020 {
+        margin: 0;
+    }
+    @include m.desktop_1920 {
+        // margin-top: 3rem;
+    }
+}
+
+.logo {
+    height: 7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    // background-color: red;
+    margin-top: 2rem;
+    @include m.tablet_768 {
+        // margin-top: 4rem;
+    }
+    @include m.desktop_1020 {
+        height: 11rem;
+    }
+    @include m.desktop_1280 {
+        justify-content: center;
+    }
+    @include m.desktop_1440 {
+        width: 98%;
+    }
+    @include m.desktop_1520 {
+        width: 96%;
+    }
+    @include m.desktop_1620 {
+        width: 97%;
+    }
+    @include m.desktop_1720 {
+        width: 100%;
+    }
+    @include m.desktop_1820 {
+        width: 170rem;
+    }
+    @include m.desktop_1920 {
+        align-items: center;
+        width: 191rem;
+    }
+}
+
+.logo__container {
+    // background-color: yellow;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__cayetano  {
+    height: 100%;
+    width: 10rem;
+    background: center/contain no-repeat url(../img/logo-off.webp);
+    @include m.phone_360 {
+        width: 12rem;    
+    }
+    @include m.tablet_768 {
+        width: 20rem;
+        transform: scale(1);
+    }
+    @include m.desktop_1280 {
+        transform: scale(1.1);
+    }
+    @include m.desktop_1920 {
+        width: 24rem;
+    }
+}
+
+.logo__talleres {
+    width: 7rem;
+    height: 6rem;
+    background: center/contain no-repeat url(../img/conversatorio.svg);
+    @include m.phone_360 {
+        transform: scale(.9);
+    }
+    @include m.phone_390 {
+        width: 7rem;
+    }
+    @include m.tablet_768 {
+        width: 10rem;
+        height: 8rem;
+    }
+    @include m.desktop_1020 {
+        width: 12rem;
+        height: 11rem;
+    }
+    @include m.desktop_1920 {
+        transform: scale(1.1);
+        width: 12rem;
+        height: 10rem;
+    }
+}

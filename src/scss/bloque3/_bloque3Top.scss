@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.top__container {
+    h3 {
+        height: 4rem;
+        margin: 0;
+        font-family: v.$druk_wide;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: v.$sexto;
+    }
+}

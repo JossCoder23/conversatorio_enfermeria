@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2 {
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 1rem;
+    @include m.tablet_768 {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+    @include m.tablet_820 {
+        margin-top: 6rem;
+    }
+    @include m.desktop_1020 {
+        margin-top: 4rem;
+    }
+    @include m.desktop_1280 {
+        margin-top: 5rem;
+    }
+}

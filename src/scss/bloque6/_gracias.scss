@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.global__gracias {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    height: 100%;
+    h3 {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: v.$morganite;
+        font-size: 7rem;
+        color: v.$sexto;
+        @include m.tablet_768 {
+            font-size: 9rem;
+        }
+    }
+}
+
+.logo__gracias {
+    position: absolute;
+    height: 10rem;
+    // background-color: red;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include m.tablet_768 {
+        height: 12rem;
+    }
+    @include m.desktop_1020 {
+        justify-content: flex-start;
+    }
+    @include m.desktop_1920 {
+        margin-top: 2rem;
+    }
+}
+
+.logo__gracias--container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: yellow;
+}
+
+.logo__gracias--grid {
+    height: 100%;
+    width: 80%;
+    transform: scale(1);
+    background: center/contain no-repeat url(../img/logo_charla.webp);
+    @include m.desktop_1020 {
+        transform: scale(.6);
+    }
+    @include m.desktop_1920 {
+        transform: scale(.8);
+    }
+}
